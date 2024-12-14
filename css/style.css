@@ -73,15 +73,15 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #3a00c08a;
   overflow-y: auto;
 }
 
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+  width: 150px;
+  border: 2px solid #ffffffb6;
 }
 
 #header .profile h1 {
@@ -96,7 +96,7 @@ h6 {
 
 #header .profile h1 a,
 #header .profile h1 a:hover {
-  color: #fff;
+  color: #c4c3ff;
   text-decoration: none;
 }
 
@@ -116,7 +116,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #0059ffbe;
   color: #fff;
   text-decoration: none;
 }
@@ -170,7 +170,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #a8a9b4;
+  color: #ffffff;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -181,7 +181,7 @@ h6 {
 .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #ffffff;
 }
 
 .nav-menu a:hover,
@@ -220,7 +220,9 @@ h6 {
   border-radius: 50px;
   cursor: pointer;
 }
-
+section {
+  filter: blur(.5px);
+}
 .mobile-nav-active {
   overflow: hidden;
 }
@@ -235,7 +237,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg2.jpg") top center;
+  background: url("../img/hero-bg2.webp") top center;
   background-size: cover;
 }
 
@@ -370,6 +372,16 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about .row img{
+  border-radius: 50px;
+  transition:ease-in-out 1s;
+  border: 2px solid gainsboro ;
+}
+.about .row img:hover {
+  filter: hue-rotate(1080deg);
+  border: 10px solid gray;
 }
 
 /*--------------------------------------------------------------
@@ -526,6 +538,13 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+  display: flex;
+}
+
+.portfolio .portfolio-item img {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
 }
 
 .portfolio #portfolio-flters {
